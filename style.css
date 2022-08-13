@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
 	padding: 0;
@@ -5,6 +6,7 @@
   box-sizing: border-box;
   line-height: 100%;
 }
+/* GENERAL */
 html, body {
   height: 100%;
 }
@@ -14,23 +16,45 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 i {
 
 }
 
 h1 {
-  padding-top: 200px;
-  font-family: 'Rubik Microbe', cursive;
+  display: block;
+  font-family: 'Rubik Microbe', sans-serif;
   font-weight: normal;
-  font-size: 200px;
+  font-size: 230px;
+}
+
+h2 {
+  font-family: 'Rubik Microbe', sans-serif;
+  font-weight: normal;
 }
 
 p {
   font-size: 20px;
 }
 
+.mode {
+  position: absolute;
+}
+
 main {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* nav burger */
@@ -97,13 +121,6 @@ nav p {
   cursor: pointer;
   position: relative;
   color: #fff;
-}
-
-nav p:hover::before {
-  content: ">";
-  color: #fff;
-  position: absolute;
-  left: -20px;
 }
 
 /* Checked styles */
